@@ -10,38 +10,30 @@ const Formulario = () => {
     const minYmax = (elemento, min, max) => {
         const texto = elemento.trim();
         if (texto.length >= min && texto.length <= max) {
-            console.log(texto.length);
-            console.log(true)
             return true;
         } else {
-            console.log(texto.length);
-            console.log(false)
             return false;
         }
     };
 
     const validarEmail = (emailProp) => {
-        console.log(emailProp)
         const value = emailProp
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(value);
     };
     const esNumero = (elemento) => {
-        console.log(true !== isNaN(elemento))
         return true !== isNaN(elemento)
     }
 
     const handlerForm = (e) => {
         e.preventDefault()
         if (minYmax(nombre, 2, 45) && minYmax(apellido, 2, 45) && (minYmax(DNI, 8, 8) && esNumero(DNI)) && validarEmail(email)) {
-            console.log("hola mundo")
             setNombre("")
             setApellido("")
             setDNI("")
             setEmail("")
             alert("Datos Enviados")
         } else {
-            console.log("NOOOOOOOOO")
             alert("Datos incorrectos, intentelo de nuevo")
         }
     }

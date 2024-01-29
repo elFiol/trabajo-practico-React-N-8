@@ -1,8 +1,6 @@
-# React + Vite
+# Formulario Simple
+## Título “Formulario” con un color de background diferente al color del body.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Formulario, con los campos de Nombre, Apellido, DNI, email y botón que me permita enviar el formulario.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Trabajo hecho por Thiago Benjamin Fiol
